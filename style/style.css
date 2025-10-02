@@ -1183,3 +1183,16 @@ h3.my-profession {
   url(../font/TmoneyRoundWind-ExtraBoldA1.ttf) format("fft"); 
   font-display: swap
 }
+.home-initials {
+  background-color: #D0DDEB; /* silver background */
+  color: var(--skin-color); /* blue text */
+  font-size: 10rem; /* large font size */
+  font-weight: 700; /* bold */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /* make it a circle */
+  margin: auto;
+}
