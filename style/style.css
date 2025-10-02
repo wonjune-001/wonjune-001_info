@@ -14,9 +14,9 @@
 .f_intel {font-family: 'intelone-mono-font-family-regular', sans-serif;}
 
 :root {
-  --bg-black-900: #f2f2fc;
-  --bg-black-100: #fdf9ff;
-  --bg-black-50: #e8dfec;
+  --bg-black-900: #B3CBE4;
+  --bg-black-100: #D0DDEB;
+  --bg-black-50: #A9C0D9;
   --text-black-900: #302e4d;
   --text-black-700: #504e70;
 }
