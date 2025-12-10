@@ -174,4 +174,31 @@ window.onload = function () {
   });
 }
 
+
+/* ===== Skill Bar Animation ===== */
+const skillsSection = document.querySelector('.about .skills');
+const progressBars = document.querySelectorAll('.progress-in');
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5 // Trigger when 50% of the element is visible
+};
+
+const observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      progressBars.forEach(bar => {
+        const targetWidth = bar.getAttribute('data-width');
+        bar.style.width = targetWidth;
+      });
+      observer.unobserve(entry.target); // Animate only once
+    }
+  });
+}, options);
+
+if (skillsSection) {
+  observer.observe(skillsSection);
+}
+
   
